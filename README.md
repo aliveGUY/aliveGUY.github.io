@@ -19,23 +19,25 @@ To get a local copy up and running follow these simple example steps.
 - [ ] Open your terminal and enter desired folder for this repo using cd path/path
 
 ### Install
-- [ ] Run **_git clone https://github.com/aliveGUY/Portfolio.git_** this will clone repository on your local machine
+- [ ] Run `git clone https://github.com/aliveGUY/aliveGUY.github.io` this will clone repository on your local machine
 
 ### Usage
-- [ ] Run **_cd Portfolio_** now you ready to use repo
-- [ ] Run **_git branch (branchname)_** to create your own branch
-- [ ] Run **_git checkout (branchname)_** you can use it this way
+- [ ] Run `cd Portfolio` now you ready to use repo
+- [ ] Run `git branch <branchname>` to create your own branch
+- [ ] Run `git checkout <branchname>` you can use it this way
 
 ### Run tests
-- [ ] Run **_npx stylelint " **/*.{css,scss}" **_** to make sure styles written properly
-- [ ] Run **_npx hint ._** to make sure HTML markup written properly
+- [ ] Run `npx stylelint " **/*.{css,scss}" **` to make sure styles written properly
+- [ ] Run `npx hint .` to make sure HTML markup written properly
 
 ### Deployment
-- [ ] **Commit and push changes using:**
-* git add .
-* git commit -m "commit"
-* git push origin < branchname >
+- [ ] `git add .`
+- [ ] `git commit -m "comment"`
+- [ ] `git push origin <branchname>`
 
+## Live Deme
+
+[Live Demo Link](https://aliveguy.github.io/)
 
 ## Author
 
