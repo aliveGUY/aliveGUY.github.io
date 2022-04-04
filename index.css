@@ -5,10 +5,11 @@
 
 .body {
   --TopBar-Height: 7.278vh;
-  overflow-y:unset ;
+
+  overflow-y: unset;
 }
 
-.body-Open{
+.body-Open {
   overflow-y: hidden !important;
 }
 
@@ -55,7 +56,7 @@
   height: var(--TopBar-Height);
   align-items: center;
   padding: 0 12px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .TopBar-Open {
@@ -63,7 +64,7 @@
   justify-content: unset;
   display: flex;
   flex-direction: column;
-  align-items:unset;
+  align-items: unset;
   height: 100vh !important;
 }
 
@@ -84,7 +85,7 @@
 
 .NavBar-button {
   right: 0;
-  position:absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +93,7 @@
   height: 40px;
 }
 
-.menu-btn_burger{
+.menu-btn_burger {
   width: 25px;
   height: 3px;
   background: #fff;
@@ -101,14 +102,12 @@
 
 .menu-btn_burger::before,
 .menu-btn_burger::after {
-
   border-radius: 5px;
   content: '';
   position: absolute;
   width: 25px;
   height: 3px;
   background: #fff;
-
 }
 
 .menu-btn_burger::before {
@@ -119,18 +118,20 @@
   transform: translateY(8px);
 }
 
-/*Anim*/
+/* Anim */
+
 .NavBar-button-Open .menu-btn_burger {
   background: transparent;
 }
 
 .NavBar-button-Open .menu-btn_burger::before {
-  background: #67798E;
-  transform: rotate(45deg) scale(70%);
+  background: #67798e;
+  transform: rotate(45deg);
 }
+
 .NavBar-button-Open .menu-btn_burger::after {
-  background: #67798E;
-  transform: rotate(-45deg) scale(70%);
+  background: #67798e;
+  transform: rotate(-45deg);
 }
 
 .Topbar-Desk-Nav {
@@ -146,24 +147,14 @@
   list-style: none;
 }
 
-.Topbar-Desk-Nav-Open .Nav-List li:nth-child(4){
-  display: none;
-}
-
-.Topbar-Desk-Nav-Open ul li{
-  padding: 15px 16px;
-  border-bottom: 2px solid #6F6C6B;
-}
-
-.Topbar-Desk-Nav-Open ul li a{
+.Topbar-Desk-Nav-Open ul li a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-decoration: none;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
-
 
 /* -------------------------------------------------------------------------------------------------------- */
 
@@ -525,6 +516,13 @@ textarea[name="user_message"]::placeholder {
   border-top: 2px solid #dfe1e6;
   clear: both;
 }
+
+.Topbar-Desk-Nav-Open ul li {
+  padding: 15px 16px;
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.Topbar-Desk-Nav-Open .Nav-List li:nth-child(4) { display: none; }
 
 .Social-media#dark li {
   align-items: flex-end;
