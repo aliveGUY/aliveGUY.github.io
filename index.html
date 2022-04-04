@@ -11,24 +11,24 @@
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body">
     <header class="TopBar">
       <div class="Logo-Plceholder">
         <a href="index.html" class="Logo">Dubrovin</a>
       </div>
-      <div class="mobilemenu">
-        
+      <div class="NavBar-button">
+        <div class="menu-btn_burger"></div>
       </div>
       <nav class="Topbar-Desk-Nav">
-        <ul>
+        <ul class="Nav-List">
           <li>
-            <a href="#Works">Porftfolio</a>
+            <a id="Portfolio" href="#Works">Portfolio</a>
           </li>
           <li>
-            <a href="#About">About</a>
+            <a id="About" href="#Myself">About</a>
           </li>
           <li>
-            <a href="#Form">Contact</a>
+            <a id="Contact" href="#Form">Contact</a>
           </li>
           <li>
             <a href="#Form">
@@ -37,12 +37,9 @@
           </li>
         </ul>
       </nav>
-      <nav class="Burger-Menu">
-        <button type="button">
-          <img src="src/img/Union.png" alt="Menu" />
-        </button>
-      </nav>
+      
     </header>
+    
     <section class="MainContent">
       <header class="headline">
         <div class="headline-content">
@@ -58,7 +55,9 @@
         <ul class="Social-media" id="top">
           <li id="-top">
             <a
-              href="https://github.com/aliveGUY"
+              href="https://g.body-Open{
+                overflow-y: hidden !important;
+              }thub.com/aliveGUY"
               class="GitHub-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -241,8 +240,8 @@
           </article>
         </div>
       </section>
+      <a id="Myself"></a>
       <section class="About">
-        <a id="About"></a>
         <h2 class="About-title">About me</h2>
         <div class="About-headline">
           <p>
@@ -359,5 +358,6 @@
         </li>
       </ul>
     </footer>
+    <script src="/index.js" type="module"></script>
   </body>
 </html>

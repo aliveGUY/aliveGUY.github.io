@@ -3,8 +3,17 @@
   margin: 0;
 }
 
-body {
+.body {
   --TopBar-Height: 7.278vh;
+  overflow-y:unset ;
+}
+
+.body-Open{
+  overflow-y: hidden !important;
+}
+
+.invisable {
+  display: none !important;
 }
 
 .button-reg {
@@ -46,6 +55,16 @@ body {
   height: var(--TopBar-Height);
   align-items: center;
   padding: 0 12px;
+  transition: all .1s ease-in-out;
+}
+
+.TopBar-Open {
+  padding: 0;
+  justify-content: unset;
+  display: flex;
+  flex-direction: column;
+  align-items:unset;
+  height: 100vh !important;
 }
 
 .Logo-Plceholder {
@@ -63,21 +82,88 @@ body {
   color: #fff5e1;
 }
 
-.Burger-Menu {
+.NavBar-button {
+  right: 0;
+  position:absolute;
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
 }
 
-.Burger-Menu button {
-  border: none;
-  background: none;
+.menu-btn_burger{
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+
+  border-radius: 5px;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(8px);
+}
+
+/*Anim*/
+.NavBar-button-Open .menu-btn_burger {
+  background: transparent;
+}
+
+.NavBar-button-Open .menu-btn_burger::before {
+  background: #67798E;
+  transform: rotate(45deg) scale(70%);
+}
+.NavBar-button-Open .menu-btn_burger::after {
+  background: #67798E;
+  transform: rotate(-45deg) scale(70%);
 }
 
 .Topbar-Desk-Nav {
   display: none;
 }
+
+.Topbar-Desk-Nav-Open {
+  display: block;
+  padding: 100px 40px;
+}
+
+.Topbar-Desk-Nav-Open ul {
+  list-style: none;
+}
+
+.Topbar-Desk-Nav-Open .Nav-List li:nth-child(4){
+  display: none;
+}
+
+.Topbar-Desk-Nav-Open ul li{
+  padding: 15px 16px;
+  border-bottom: 2px solid #6F6C6B;
+}
+
+.Topbar-Desk-Nav-Open ul li a{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #FFF5E1;
+}
+
 
 /* -------------------------------------------------------------------------------------------------------- */
 
@@ -757,7 +843,7 @@ textarea[name="user_message"]::placeholder {
     color: #fff5e1;
   }
 
-  .Burger-Menu {
+  .NavBar-button {
     display: none;
   }
 
