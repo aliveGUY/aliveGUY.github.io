@@ -48,9 +48,9 @@ for (let i = 0; i < Works.length; i += 1) {
   div.appendChild(p);
   div.appendChild(ul);
 
-  for (let i = 0; i < Works[i].Technologies.length; i += 1) {
+  for (let j = 0; j < Works[i].Technologies.length; j += 1) {
     const li = document.createElement('li');
-    li.textContent = Works[i].Technologies[i];
+    li.textContent = Works[i].Technologies[j];
     ul.appendChild(li);
   }
 
