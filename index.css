@@ -574,6 +574,15 @@
   list-style: none;
 }
 
+.Form-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Form-names div {
+  width: 45%;
+}
+
 .Form-input {
   border: none;
   border-bottom: 2px solid #d8d8d7;
@@ -617,6 +626,20 @@ textarea[name="user_message"]::placeholder {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.error {
+  font-family: 'Init', sans-serif;
+  color: hsla(0, 90%, 70%, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.error input {
+  border: 2px hsla(0, 90%, 70%, 1) dashed !important;
+  margin: 0;
 }
 
 .Footer {
