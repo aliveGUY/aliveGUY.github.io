@@ -1,5 +1,5 @@
-import { Works } from './Data.js';
-import { Popup } from './Popup.js';
+import Works from './Data.js';
+import Popup from './Popup.js';
 
 const WorkCards = document.querySelector('.Works-Cards');
 

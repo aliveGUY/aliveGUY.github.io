@@ -1,7 +1,7 @@
 const Popwrapper = document.querySelector('.Popup-wrapper');
 const Pop = document.querySelector('.Popup');
 
-export function Popup(Title, Description, Technologies, Image, LinkLive, LinkRepo) {
+export default function Popup(Title, Description, Technologies, Image, LinkLive, LinkRepo) {
   Popwrapper.style.display = 'flex';
 
   const div1 = document.createElement('div');
