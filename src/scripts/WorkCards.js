@@ -2,6 +2,27 @@ import Works from './Data.js';
 import Popup from './Popup.js';
 
 const WorkCards = document.querySelector('.Works-Cards');
+const RecentImg = document.querySelector('.Works-Recent-Img');
+const RecentH2 = document.querySelector('.Works-Recent-h2');
+const RecentP = document.querySelector('.Works-Recent-p');
+const RecentButton = document.querySelector('.Works-Card-Button');
+const RecentCat = document.querySelector('.Works-Card-Categories');
+
+RecentImg.src = Works[0].Image;
+RecentH2.textContent = Works[0].Title;
+RecentP.textContent = Works[0].Description;
+
+for (let i = 0; i < Works[0].Technologies.length; i += 1) {
+  const li = document.createElement('li');
+  li.textContent = Works[0].Technologies[i];
+  RecentCat.appendChild(li);
+}
+
+RecentButton.onclick = () => {
+  Popup(Works[0].Title, Works[0].Description, Works[0].Technologies,
+    Works[0].Image, Works[0].Link_Live, Works[0].Link_Repo);
+}
+
 
 for (let i = 0; i < Works.length; i += 1) {
   const article = document.createElement('article');
