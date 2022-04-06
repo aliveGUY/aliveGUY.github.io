@@ -5,6 +5,7 @@
 
 .body {
   --TopBar-Height: 7.278vh;
+
   overflow-y: unset;
 }
 
@@ -146,6 +147,17 @@
   list-style: none;
 }
 
+.Popup-content nav a {
+  padding: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  background-color: #ff6b00;
+}
+
 .Topbar-Desk-Nav-Open ul li a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -154,10 +166,10 @@
   text-decoration: none;
   color: #fff5e1;
 }
+
 /* -------------------------------------------------------------------------------------------------------- */
 
-
-.Popup-wrapper{
+.Popup-wrapper {
   display: none;
   justify-content: center;
   align-items: center;
@@ -191,12 +203,21 @@
   font-weight: 700;
 }
 
-.Popup-title h2{
+.Popup-title h2 {
   display: flex;
   justify-content: space-between;
 }
 
-.Popup-title h2 button{
+.Works-Card-SeeProject button {
+  width: 100%;
+}
+
+.About-headline button {
+  margin-top: 12px;
+  margin-bottom: calc(max(9vw, 30vh));
+}
+
+.Popup-title h2 button {
   width: 40px;
   height: 40px;
   background: none;
@@ -209,11 +230,31 @@
   flex-wrap: wrap;
 }
 
+.Social-media li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 40px;
+  width: 40px;
+}
+
+.Works-Card-Categories li {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid #091e42;
+  float: left;
+}
+
 .Popup-title ul li {
   margin-top: 10px;
   margin-right: 10px;
   list-style: none;
-  color: #3C3A39;
+  color: #3c3a39;
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
@@ -237,29 +278,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .Popup-content nav {
   display: flex;
   justify-content: space-between;
 }
 
-.Popup-Source, .Popup-Live{
+.Popup-Source,
+.Popup-Live {
   display: flex;
   justify-content: center;
 }
 
-.Popup-Source img, .Popup-Live img {
+.Popup-Source img,
+.Popup-Live img {
   margin-left: 10px;
-}
-
-.Popup-content nav a {
-  padding: 12px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 17px;
-  line-height: 24px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  background-color: #FF6B00;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -309,15 +342,6 @@
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.Social-media li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  height: 40px;
-  width: 40px;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -386,17 +410,6 @@
   list-style: none;
 }
 
-.Works-Card-Categories li {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  margin-right: 12px;
-  margin-bottom: 12px;
-  padding: 10px 12px;
-  border: 1px solid #091e42;
-  float: left;
-}
-
 .Works-Cards {
   grid-area: 3/ 2 / span 1 / span 1;
   display: grid;
@@ -457,10 +470,6 @@
   bottom: 0;
 }
 
-.Works-Card-SeeProject button {
-  width: 100%;
-}
-
 /* -------------------------------------------------------------------------------------------------------- */
 .About {
   color: #fff;
@@ -490,11 +499,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-}
-
-.About-headline button {
-  margin-top: 12px;
-  margin-bottom: calc(max(9vw, 30vh));
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -781,7 +785,9 @@ textarea[name="user_message"]::placeholder {
   }
 
   .Works-Card:hover {
-    background: url(src/img/Card-Background.png) no-repeat center cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .Works-Card:hover .Works-Card-Content {
