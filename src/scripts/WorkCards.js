@@ -27,6 +27,15 @@ for (let i = 0; i < Works.length; i += 1) {
   const article = document.createElement('article');
   article.className = 'Works-Card';
   article.style.backgroundImage = `linear-gradient(180.45deg,rgba(38, 38, 38, 0) 0.75%,rgba(38, 38, 38, 0.9) 61.94%),url(${Works[i].Image})`;
+  const mediaQuery = window.matchMedia('(min-device-width: 768px)');
+  if (mediaQuery.matches) {
+    article.addEventListener('mouseenter', () => {
+      article.style.backgroundImage = `url(${Works[i].Image})`;
+    });
+    article.addEventListener('mouseleave', () => {
+      article.style.backgroundImage = `linear-gradient(180.45deg,rgba(38, 38, 38, 0) 0.75%,rgba(38, 38, 38, 0.9) 61.94%),url(${Works[i].Image})`;
+    });
+  }
   const div = document.createElement('div');
   div.className = 'Works-Card-Content';
   const h2 = document.createElement('h2');
