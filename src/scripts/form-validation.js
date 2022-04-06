@@ -5,7 +5,7 @@ const message = document.querySelector('#message');
 const form = document.querySelector('#Form-form');
 
 const isEmailValid = (email) => {
-  const re = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  const re = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   return re.test(email);
 };
 
@@ -69,6 +69,8 @@ const checkEmail = () => {
   const email = emailEl.value.trim();
   if (!isRequired(email)) {
     showError(emailEl, 'Email cannot be blank');
+  } else if (emailEl.value.toLowerCase() !== emailEl.value) {
+    showError(emailEl, 'Email should be in lowercase');
   } else if (!isEmailValid(email)) {
     showError(emailEl, 'Email is not valid.');
   } else {
