@@ -5,7 +5,7 @@ const message = document.querySelector('#message');
 const form = document.querySelector('#Form-form');
 
 const isEmailValid = (email) => {
-  const re = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  const re = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   return re.test(email);
 };
 
