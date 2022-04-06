@@ -17,8 +17,21 @@ const func = () => {
 
 NavButton.addEventListener('click', func);
 
-Portfolio.addEventListener('click', func);
+Portfolio.addEventListener('click', () =>{
+  if(NavButton.classList.contains('NavBar-button-Open')){
+    func()
+  }
+});
 
-About.addEventListener('click', func);
+About.addEventListener('click', () =>{
+  if(NavButton.classList.contains('NavBar-button-Open')){
+    func()
+  }
+});
 
-Contact.addEventListener('click', func);
+Contact.addEventListener('click', () =>{
+  if(NavButton.classList.contains('NavBar-button-Open')){
+    func()
+  }
+});
+
