@@ -21,8 +21,7 @@ for (let i = 0; i < Works[0].Technologies.length; i += 1) {
 RecentButton.onclick = () => {
   Popup(Works[0].Title, Works[0].Description, Works[0].Technologies,
     Works[0].Image, Works[0].Link_Live, Works[0].Link_Repo);
-}
-
+};
 
 for (let i = 0; i < Works.length; i += 1) {
   const article = document.createElement('article');
