@@ -593,7 +593,7 @@ small {
   padding-left: 16px;
 }
 
-.Form-Name-Wrapper[name = Last_Name] {
+#Hide {
   display: none;
 }
 
@@ -963,7 +963,7 @@ textarea[name="user_message"]::placeholder {
     width: 45%;
   }
 
-  .Form-Name-Wrapper[name = Last_Name] {
+  #Hide {
     display: block;
   }
 
