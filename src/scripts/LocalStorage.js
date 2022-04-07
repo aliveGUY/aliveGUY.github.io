@@ -1,4 +1,3 @@
-let data = document.querySelectorAll('#Form-form input, textarea');
 const Name = document.querySelector('#Name');
 const LastName = document.querySelector('#Last_Name');
 const Email = document.querySelector('#email');
@@ -13,6 +12,7 @@ function InsertData() {
   };
   localStorage.setItem('Data', JSON.stringify(formInput));
 }
+console.log(InsertData());
 
 function RetriveData() {
   if (localStorage.getItem('Data')) {
