@@ -574,14 +574,14 @@
   list-style: none;
 }
 
-.Form-email {
-  display: flex;
-  flex-direction: column;
+.error {
+  border-bottom: 3px red dashed !important;
+  margin: 0 !important;
 }
 
-.error {
-  margin: 0 !important;
-  border: 4px red dashed !important;
+small {
+  font-family: 'Roboto', sans-serif;
+  color: red;
 }
 
 .Form-input {
@@ -593,7 +593,7 @@
   padding-left: 16px;
 }
 
-.Form-input[name="user_last_name"] {
+.Form-Name-Wrapper[name = Last_Name] {
   display: none;
 }
 
@@ -603,6 +603,11 @@
   font-size: 15px;
   line-height: 24px;
   color: #979493;
+}
+
+.Form-email {
+  display: flex;
+  flex-direction: column;
 }
 
 textarea[name="user_message"] {
@@ -624,8 +629,9 @@ textarea[name="user_message"]::placeholder {
 }
 
 .Form-button {
-  width: 100%;
+  width: 125px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -948,17 +954,17 @@ textarea[name="user_message"]::placeholder {
   }
 
   /* ---------------------- */
-  .Form-list li:nth-child(1n) {
+  .Form-list li:nth-child(1) {
     display: flex;
+    justify-content: space-between;
   }
 
-  .Form-input[name="user_name"] {
-    margin-right: 12px;
+  .Form-Name-Wrapper {
+    width: 45%;
   }
 
-  .Form-input[name="user_last_name"] {
+  .Form-Name-Wrapper[name = Last_Name] {
     display: block;
-    margin-left: 12px;
   }
 
   textarea[name="user_message"] {
@@ -969,10 +975,6 @@ textarea[name="user_message"]::placeholder {
     background: #fbf8f7;
     margin-bottom: 24px;
     resize: vertical;
-  }
-
-  textarea[name="user_message"]::-webkit-input-placeholder {
-    content: "test";
   }
 
   .Form-button {
