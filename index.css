@@ -574,13 +574,14 @@
   list-style: none;
 }
 
-.Form-names {
+.Form-email {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.Form-names div {
-  width: 45%;
+.error {
+  margin: 0 !important;
+  border: 4px red dashed !important;
 }
 
 .Form-input {
@@ -626,20 +627,6 @@ textarea[name="user_message"]::placeholder {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.error {
-  font-family: 'Init', sans-serif;
-  color: hsla(0, 90%, 70%, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.error input {
-  border: 2px hsla(0, 90%, 70%, 1) dashed !important;
-  margin: 0;
 }
 
 .Footer {
