@@ -12,7 +12,6 @@ function InsertData() {
   };
   localStorage.setItem('Data', JSON.stringify(formInput));
 }
-console.log(InsertData());
 
 function RetriveData() {
   if (localStorage.getItem('Data')) {
