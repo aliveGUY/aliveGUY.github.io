@@ -120,9 +120,8 @@
         </div>
         <div class="Works-Recent-Project">
           <img class="Works-Recent-Img" src="#" alt="Img" />
-          <h2 class="Works-Recent-h2"></h2>
-            <p class="Works-Recent-p">
-              </p>
+          <h2 class="Works-Recent-h2">Title</h2>
+            <p class="Works-Recent-p"></p>
             <div class="Works-Recent-Nav">
               <ul class="Works-Card-Categories"></ul>
               <nav>
@@ -188,17 +187,25 @@
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h2>
         </div>
-        <form action="https://formspree.io/f/mqknlvyq" method="post" class="Form-form">
+         <form action="https://formspree.io/f/mqknlvyq" method="post" id="Form-form" class="Form-form" name="contact"> 
           <ul class="Form-list">
-            <li>
-              <input class="Form-input" type="text" placeholder="Full name" name="user_name" required maxlength="30"/>
-              <input class="Form-input" type="text" placeholder="Last name" name="user_last_name" required maxlength="30"/>
+            <li class="Form-names">
+              <div>
+                <input class="Form-input" id="Name" name="Name" type="text" placeholder="Name" maxlength="30"/>
+                <small></small>
+              </div>
+              <div>
+                <input class="Form-input" id="Last_Name" name="Last_Name" type="text" placeholder="Last name" maxlength="30"/>
+                <small></small>
+              </div>
+            </li>
+            <li class="Form-email">
+              <input class="Form-input" id="email" name="Email" placeholder="Email address"/>
+                <small></small>
             </li>
             <li>
-              <input class="Form-input" type="email" placeholder="Email address" name="user_email" required/>
-            </li>
-            <li>
-              <textarea name="user_message" placeholder="Enter text here" required maxlength="500"></textarea>
+              <textarea id="message" name="user_message" placeholder="Leave your message here"  maxlength="500"></textarea>
+              <small></small>
             </li>
             <li class="Form-button">
               <button type="submit" class="button-reg">Get in touch</button>
@@ -252,7 +259,7 @@
       </ul>
     </footer>
     <script type="module" src="/src/scripts/MobileMenu.js"></script>
-    <script type="module" src="/src/scripts/Popup.js"></script>
+    <script type="module" src="/src/scripts/form-validation.js"></script>
     <script type="module" src="/src/scripts/WorkCards.js"></script>
   </body>
 </html>
