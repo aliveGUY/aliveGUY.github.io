@@ -1,13 +1,9 @@
-let data = document.querySelectorAll('#Form-form input, textarea');
+const data = document.querySelectorAll('#Form-form input, textarea');
 const error = document.querySelectorAll('#Form-form small');
 const form = document.querySelector('#Form-form');
 
-let ei = 2;
-
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   data[1].value = 'sent from mobile';
-  data = document.querySelectorAll('#Name, #email, #message');
-  ei = 1;
 }
 
 form.addEventListener('submit', (e) => {
@@ -26,16 +22,14 @@ form.addEventListener('submit', (e) => {
     }
   }
 
-  if (data[ei].value.toLowerCase() !== data[ei].value) {
+  if (data[2].value.toLowerCase() !== data[2].value) {
     e.preventDefault();
-    data[ei].classList.add('error');
-    error[ei].textContent = 'Email cant contain upercase';
+    data[2].classList.add('error');
+    error[2].textContent = 'Email cant contain upercase';
     error[4].textContent = 'Email cant contain upercase';
     e.preventDefault();
-    e.preventDefault();
-    e.preventDefault();
   } else {
-    error[ei].textContent = '';
-    data[ei].classList.remove('error');
+    error[2].textContent = '';
+    data[2].classList.remove('error');
   }
 });

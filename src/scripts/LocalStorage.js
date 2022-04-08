@@ -1,17 +1,19 @@
-const Name = document.querySelector('#Name');
-const LastName = document.querySelector('#Last_Name');
-const Email = document.querySelector('#email');
-const Message = document.querySelector('#message');
+const form = document.forms.contact;
+const Name = form.elements[0];
+const LastName = form.elements.Last_Name;
+const Email = form.elements.email;
+const Message = form.elements.message;
 
-function InsertData() {
+form.addEventListener('input', (e) => {
   const formInput = {
     name: Name.value,
     lastName: LastName.value,
     email: Email.value,
     message: Message.value,
   };
+  formInput[e.target.id] = form.elements[e.target.id].value;
   localStorage.setItem('Data', JSON.stringify(formInput));
-}
+});
 
 function RetriveData() {
   if (localStorage.getItem('Data')) {
