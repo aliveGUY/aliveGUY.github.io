@@ -1,5 +1,13 @@
 const Works = [
   {
+    Title: 'CC Global Summit 2015',
+    Description: 'This project is my attempt on recreating main site for CC Global Summit 2015',
+    Technologies: ['css', 'html', 'bootstrap', 'JavaScript'],
+    Image: 'src/img/CCGS2015.jpg',
+    Link_Live: 'https://aliveguy.github.io/conference/',
+    Link_Repo: 'https://github.com/aliveGUY/conference',
+  },
+  {
     Title: 'Three.js Test',
     Description: 'This is a test project i`ve made on my own. Here i was following tutorial. Three.js is a really great framework. I rally enjoy to work woth 3D',
     Technologies: ['css', 'html', 'GLSL', 'three.js'],
@@ -27,14 +35,6 @@ const Works = [
     Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard',
     Technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     Image: 'src/img/Works-Yoga_girl.png',
-    Link_Live: '#',
-    Link_Repo: '',
-  },
-  {
-    Title: 'Website Protfolio',
-    Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard',
-    Technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    Image: 'src/img/Works-Card-Background.png',
     Link_Live: '#',
     Link_Repo: '',
   },
