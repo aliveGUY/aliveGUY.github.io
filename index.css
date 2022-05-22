@@ -446,9 +446,11 @@
 }
 
 .Works-Card-Content p {
+  max-height: 100px;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 12px;
+  overflow: hidden;
 }
 
 .Works-Card-Content ul {
